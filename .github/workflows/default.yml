@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Generate Dockerfile
-      run: ./generate-Dockerfile.sh --password 069069
+      run: ./generate-Dockerfile.sh
 
     - name: Build Image
       run: docker build -t gpu-jupyter .build/  # will take a while
