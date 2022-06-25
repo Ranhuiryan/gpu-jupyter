@@ -5,7 +5,8 @@ cd $(cd -P -- "$(dirname -- "$0")" && pwd -P)
 export DOCKERFILE=".build/Dockerfile"
 export STACKS_DIR=".build/docker-stacks"
 # please test the build of the commit in https://github.com/jupyter/docker-stacks/commits/master in advance
-export HEAD_COMMIT="cf5a7ab55638d7efcb074302e8cb74bded330b3a"
+# export HEAD_COMMIT="cf5a7ab55638d7efcb074302e8cb74bded330b3a"
+export HEAD_COMMIT="0e497a033cf49f0e303b18689a409cad3751663f"
 
 while [[ "$#" -gt 0 ]]; do case $1 in
   -p|--pw|--password) PASSWORD="$2" && USE_PASSWORD=1; shift;;
