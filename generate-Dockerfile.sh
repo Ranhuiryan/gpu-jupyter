@@ -4,9 +4,9 @@ cd $(cd -P -- "$(dirname -- "$0")" && pwd -P)
 # Set the path of the generated Dockerfile
 export DOCKERFILE=".build/Dockerfile"
 export STACKS_DIR=".build/docker-stacks"
-# please test the build of the commit in https://github.com/jupyter/docker-stacks/commits/master in advance
+# please test the build of the commit in https://github.com/jupyter/docker-stacks/commits/main in advance
 # export HEAD_COMMIT="cf5a7ab55638d7efcb074302e8cb74bded330b3a"
-export HEAD_COMMIT="46c41283ba205fbc3f4525772d1d0f62bfb4075c"
+export HEAD_COMMIT="83a5335f71328b20ce84b48c65abe423e56349ac"
 
 while [[ "$#" -gt 0 ]]; do case $1 in
   -p|--pw|--password) PASSWORD="$2" && USE_PASSWORD=1; shift;;
